@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcoming Email</title>
+    <style>
+        body {
+            margin: 0 auto;
+            padding: 0;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the start (top) */
+            min-height: 100vh;
+            width: 100%;
+            background: linear-gradient(8deg, rgba(57, 194, 215, 0.50) -8.44%, rgba(217, 217, 217, 0.00) 89.77%);
+           
+        }
+
+        .welcome-container {
+            width: 90vw;
+            display: flex;
+            justify-content: space-between; /* Create space between the two boxes */
+            padding: 20px;
+            margin: 5vw 2vw;
+            background-color: #f5f6f6;
+            border-radius: 4vw;
+        }
+
+        .left-box {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 60%;
+
+        }
+
+        .welcome-text {
+            color: #002855;
+            font-size: 4.5vw;
+            font-family: 'Mulish', sans-serif;
+            font-weight: 900;
+            line-height: 1.2;
+            text-align: left;
+            margin-top: 5vw;
+        }
+
+        .additional-text {
+            color: #002855;
+            font-size: 3.5vw;
+            font-family: 'Mulish', sans-serif;
+            font-weight: 300;
+            line-height: 1.1;
+            text-align: left;
+            word-wrap: break-word;
+            margin-top: 15px;
+        }
+
+        .download-section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 7vw;;
+        }
+
+        .download-info {
+            color: #002855;
+            font-size: 2.5vw;
+            font-family: 'Mulish', sans-serif;
+            font-weight: 500;
+            word-wrap: break-word;
+            margin-top: 20px;
+        }
+
+    
+        .banner-image {
+            max-width: 120%;
+            margin-top: 20px;
+            width:100vw;
+        }
+
+        .right-box {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .logo {
+            width: 30vw;
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .moim-info-area1{
+            display: flex;
+            align-items: center;
+            margin-top: -20vw;
+        }
+
+        .moim-image1{
+            width: 60vw;
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .moim-info-area1-text{
+            font-family: Mulish;
+            font-weight: 400;
+            color: #002855;
+            font-size: 3vw;
+            font-family: 'Mulish', sans-serif;
+            line-height: 4.5vw;
+        }
+
+        .rectangle{
+            width: 5vw;
+            max-width: 100%;
+            margin-left: -8vw;
+            margin-right: 2vw;
+        }
+
+        .moim-info-area2{
+            display: flex;
+            align-items: center;
+            margin-top: -30vw;
+        }
+
+        .moim-image2{
+            width: 60vw;
+            max-width: 100%;
+            margin-bottom: 10px;
+            margin-right: -4vw;
+        }
+
+        .moim-info-area2-text{
+            font-family: Mulish;
+            font-weight: 400;
+            color: #002855;
+            font-size: 3vw;
+            font-family: 'Mulish', sans-serif;
+            line-height: 4.5vw;
+            margin-right: -10vw;
+        }
+
+        .rectangle2{
+            width: 5vw;
+            max-width: 100%;
+            margin-left: 3vw;
+            margin-right: 2vw;
+        }
+
+        .moim-info-area3{
+            display: flex;
+            align-items: center;
+            margin-top: -10vw;
+        }
+
+        .moim-image3{
+            width: 60vw;
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .moim-info-area3-text{
+            font-family: Mulish;
+            font-weight: 400;
+            color: #002855;
+            font-size: 3vw;
+            font-family: 'Mulish', sans-serif;
+            line-height: 4.5vw;
+        }
+
+        .rectangle3{
+            width: 5vw;
+            max-width: 100%;
+            margin-left: -8vw;
+            margin-right: 2vw;
+        }
+
+        .moim-info-area4{
+            display: flex;
+            align-items: center;
+            margin-top: -15vw;
+        }
+
+        .moim-image4{
+            width: 60vw;
+            max-width: 100%;
+            margin-bottom: 10px;
+            margin-right: -4vw;
+        }
+
+        .moim-info-area4-text{
+            font-family: Mulish;
+            font-weight: 400;
+            color: #002855;
+            font-size: 3vw;
+            font-family: 'Mulish', sans-serif;
+            line-height: 4.5vw;
+            margin-right: -10vw;
+        }
+
+        .rectangle4{
+            width: 5vw;
+            max-width: 100%;
+            margin-left: 3vw;
+            margin-right: 2vw;
+        }
+        
+        .moim-info-area5{
+            display: flex;
+            align-items: center;
+            margin-top: -40vw;
+        }
+
+        .moim-image5{
+            width: 60vw;
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .moim-info-area5-text{
+            font-family: Mulish;
+            font-weight: 400;
+            color: #002855;
+            font-size: 3vw;
+            font-family: 'Mulish', sans-serif;
+            line-height: 4.5vw;
+        }
+
+        .rectangle5{
+            width: 5vw;
+            max-width: 100%;
+            margin-left: -8vw;
+            margin-right: 2vw;
+        }
+
+        .moim-info-area6{
+            display: flex;
+            align-items: center;
+            margin-top: -30vw;
+        }
+
+        .moim-image6{
+            width: 60vw;
+            max-width: 100%;
+            margin-bottom: 10px;
+            margin-right: -4vw;
+        }
+
+        .moim-info-area6-text{
+            font-family: Mulish;
+            font-weight: 400;
+            color: #002855;
+            font-size: 3vw;
+            font-family: 'Mulish', sans-serif;
+            line-height: 4.5vw;
+            margin-right: -10vw;
+        }
+
+        .rectangle6{
+            width: 5vw;
+            max-width: 100%;
+            margin-left: 3vw;
+            margin-right: 2vw;
+        }
+        
+        .app-direct-area {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        }
+
+        .app-direct-text {
+            font-family: 'Mulish', sans-serif;
+            font-weight: 400;
+            color: #002855;
+            font-size: 3vw;
+            line-height: 5vw;
+            margin-bottom: 10px; /* Adjust this as needed */
+        }
+
+        .download-button {
+            width: 45vw;
+            height: 4vh;
+            background: #002855;
+            border-radius: 93.77px;
+            color: white;
+            font-size: 2.5vw;
+            font-family: 'Mulish', sans-serif;
+            font-weight: 400;
+            margin-top: 5vw;
+            text-align: center; /* Center text horizontally within the button */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none; /* To remove underlines from the link */
+        }
+
+        .download-qr{
+            width: 30vw;
+            max-width: 100%;
+            margin-top: 10vw;
+            margin-bottom: 10vw;
+
+        }
+
+        .other-apps-icons-container {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin-right: -2vw;
+        }
+        .other-apps-icons-container a {
+            margin: 0.5vw;
+            text-decoration: none; 
+        }
+
+        .other-apps-icons-container img {
+            max-width: 100%;
+            margin: -0vw;
+        }
+
+        .marketing-unsubscribe-link{
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: 3vw;
+        }
+
+        .marketing-unsubscribe-link-text{
+            font-family: 'Mulish', sans-serif;
+            font-weight: 300;
+            color: #002855;
+            font-size: 2vw;
+            line-height: 5vw;
+            margin: 4vw;
+        }
+
+   
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <div class="left-box">
+            <img src="assests/turktelekom-logo.png" alt="turktelekom-logo" class="logo">
+            <div class="welcome-text">TÜRK TELEKOM’a <br/>Hoş Geldiniz !</div>
+            <div class="additional-text">Sizi dijital dünyamıza davet ediyoruz.</div>
+            <div class="download-section">
+                <div class="download-info"><strong>Türk Telekom uygulamasını</strong> indirerek evde internet ve diğer ürünlerinize ait işlemlerinizi hızla ve kolaylıkla gerçekleştirebilirsiniz.<br/><br/>Hadi şimdi uygulamada neler yapabileceğinize bir bakalım.</div>
+                <a href="https://apps.apple.com/tr/app/t%C3%BCrk-telekom-online-i-%C5%9Flemler/id496489138?l=tr" target="_blank" rel="noopener noreferrer" class="download-button">Uygulamayı İndir</a>
+            </div>
+        </div>
+        <div class="right-box">
+            <img src="assests/banner-image.png" alt="banner-image" class="banner-image">
+        </div>
+    </div>
+
+    <div class="moim-info-area1">
+        <img src="assests/moim-image1.png" alt="moim-image1" class="moim-image1">
+        <img src="assests/Rectangle.png" alt="Rectangle" class="rectangle">
+        <div class="moim-info-area1-text">İnternetin zararlı içeriklerine karşı otomatik olarak tanımlanan  <strong>Güvenli İnternet Hizmeti > Aile Profili Ayarınızı</strong> görüntüleyebilir, dilediğiniz zaman profil ayarınızı değiştirebilirsiniz.</div>
+    </div>
+
+    <div class="moim-info-area2">
+        <img src="assests/Rectangle.png" alt="Rectangle" class="rectangle2">
+        <div class="moim-info-area2-text">Abonelik <strong>taahhüt </strong> başlangıç/bitiş tarihi ve diğer tüm <strong> abonelik bilgilerinizi </strong>görüntüleyebilirsiniz.
+            <br><br>Sadece Türk Telekom uygulamasında geçerli <strong> en avantajlı tekliflerle taahhüdünüzü yenileyebilir </strong>ve <strong>yüksek hız</strong> paketlerine geçebilirsiniz.</div>
+        <img src="assests/moim-image2.png" alt="moim-image2" class="moim-image2">
+
+    </div>
+    
+    <div class="moim-info-area3">
+        <img src="assests/moim-image3.png" alt="moim-image1" class="moim-image3">
+        <img src="assests/Rectangle.png" alt="Rectangle" class="rectangle3">
+        <div class="moim-info-area3-text"><strong>Bi’ Dünya Fırsat</strong> ile anlaşmalı birçok markanın <strong>Türk Telekomlulara özel sunduğu ayrıcalıklardan</strong> faydalanabilirsiniz.</div>
+    </div>
+
+    <div class="moim-info-area4">
+        <img src="assests/Rectangle.png" alt="Rectangle" class="rectangle4">
+        <div class="moim-info-area4-text">Bağlantı kalitenizin <strong>otomatik olarak kontrol edilmesini </strong> sağlayabilirsiniz. </div>
+        <img src="assests/moim-image4.png" alt="moim-image2" class="moim-image4">
+
+    </div>
+
+    <div class="moim-info-area5">
+        <img src="assests/moim-image5.png" alt="moim-image5" class="moim-image5">
+        <img src="assests/Rectangle.png" alt="Rectangle" class="rectangle5">
+        <div class="moim-info-area5-text">WiFi <strong> adınızı </strong> ve <strong>şifrenizi</strong> istediğiniz yerden anında değiştirebilirsiniz.</div>
+    </div>
+
+
+    <div class="moim-info-area6">
+        <img src="assests/Rectangle.png" alt="Rectangle" class="rectangle6">
+        <div class="moim-info-area4-text">Fatura detaylarınızı görüntüleyip <strong>ödeyebilir</strong>, <strong>otomatik ödeme talimatı </strong> verebilir, fatura gönderim tercihinizi ve iletişim bilgilerinizi güncelleyebilirsiniz. </div>
+        <img src="assests/moim-image6.png" alt="moim-image2" class="moim-image6">
+
+    </div>
+
+    <div class="app-direct-area">
+        <div class="app-direct-text">Hepsi ve daha fazlası 
+            <br> <strong>Türk Telekom Uygulaması’nda</strong>
+        </div>
+        <a href="https://apps.apple.com/tr/app/t%C3%BCrk-telekom-online-i-%C5%9Flemler/id496489138?l=tr" target="_blank" rel="noopener noreferrer" class="download-button">Uygulamayı İndir</a>
+        <img src="assests/download-qr.png" alt="download-qr" class="download-qr">
+    </div>
+
+    <div class="app-direct-area">
+        <div class="app-direct-text">İlginizi Çekebilecek Diğer
+            <br> <strong>Türk Telekom Uygulamaları</strong>
+        </div>
+    </div>
+
+    <div class="other-apps-icons-container">
+        <a href="http://muud.ly/moim-indir" target="_blank"><img src="assests/muud-icon.png" alt="Image 1"></a>
+        <a href="https://app.adjust.com/kszynz8" target="_blank"><img src="assests/edergi-icon.png" alt="Image 2"></a>
+        <a href="https://app.adjust.com/zqzuza9" target="_blank"><img src="assests/tivibugo-icon.png" alt="Image 3"></a>
+        <a href="https://app.adjust.com/chw1usl?campaign=OIM&adgroup=uygulama&creative=tanitim" target="_blank"><img src="assests/pokus-icon.png" alt="Image 4"></a>
+        <a href="https://www.dijitaldepo.com.tr/pages/home" target="_blank"><img src="assests/dijitaldepo-icon.png" alt="Image 5"></a>
+        <a href="https://yaay.com.tr/login" target="_blank"><img src="assests/yaat-icon.png" alt="Image 6"></a>
+    </div>
+
+    <div class="marketing-unsubscribe-link">
+        <div class="marketing-unsubscribe-link-text">Kampanya, katılım bilgilendirmelerini almak istemiyorsanız<strong> tıklayın.</strong>
+        </div>
+    </div>
+
+
+</body>
+</html>
